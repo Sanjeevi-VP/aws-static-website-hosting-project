@@ -1,4 +1,4 @@
-AWS Static Website Hosting Project :
+AWS Static Website Hosting Project
 
 I built this project to move beyond running websites locally and understand how static hosting actually works in AWS.
 
@@ -6,7 +6,7 @@ Since this was one of my first hands-on cloud projects, my main goal was simple:
 
 The final result is a personal portfolio website hosted using Amazon S3 and delivered through CloudFront.
 
-I also explored IAM and Route 53 to understand how a more complete AWS hosting setup works.
+I also worked with IAM to understand AWS permissions and access management.
 
 A) What I Built
 
@@ -21,16 +21,17 @@ For the frontend, I used HTML, CSS, and JavaScript.
 
 The main learning focus here was AWS deployment rather than frontend complexity.
 
-B) AWS Services :
+B) AWS Services
 
-1) Amazon S3 :
+1) Amazon S3
 
 I used an S3 bucket to host the website files.
 
 I uploaded the frontend files (`index.html`, `style.css`, and `script.js`) and enabled static website hosting so the website could be opened through the browser.
 
+This was my first time working with bucket permissions and public access settings.
 
-2) Amazon CloudFront :
+2) Amazon CloudFront
 
 Once the website was working in S3, I wanted to understand how websites are delivered faster globally.
 
@@ -40,19 +41,13 @@ At first, the website was not opening properly. After checking the settings, I r
 
 After setting `index.html`, everything started working normally.
 
-3) IAM :
+3) IAM
 
 Instead of only using the AWS root account, I created an IAM user called `portfolio-admin`.
 
 This helped me understand AWS permissions and why AWS recommends not using the root account for normal work.
 
-4) Route 53 :
-
-I explored Route 53 while learning how custom domains are connected in AWS.
-
-Right now, the website runs through the CloudFront domain URL.
-
-C) Architecture :
+C) Architecture
 
 Architecture diagram for the project:
 
@@ -63,8 +58,6 @@ Flow used:
 User → CloudFront → S3 Static Website
 
 IAM was used for access management.
-
-Route 53 is part of the planned setup for a future custom domain.
 
 D) Step-by-Step Deployment
 
@@ -104,19 +97,19 @@ E) Screenshots
 
 S3 Bucket
 
-(screenshots/s3-bucket-files.png)
+![S3 Bucket](screenshots/s3-bucket-files.png)
 
 IAM User
 
-(screenshots/iam-user-created.png)
+![IAM](screenshots/iam-user-created.png)
 
 CloudFront Distribution
 
-(screenshots/cloudfront-enabled.png)
+![CloudFront](screenshots/cloudfront-enabled.png)
 
 Live Website
 
-(screenshots/live-portfolio-website.png)
+![Website](screenshots/live-portfolio-website.png)
 
 F) Live Website
 
