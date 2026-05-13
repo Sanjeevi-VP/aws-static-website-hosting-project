@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#0d1117;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h1{
+    font-size:60px;
+    animation:fadeIn 2s ease;
+}
+
+.hero-content h2{
+    color:#00c3ff;
+    margin-top:10px;
+}
+
+.hero-content p{
+    margin-top:20px;
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    background:#00c3ff;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.about,
+.skills,
+.projects{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.skill-box{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#161b22;
+    padding:30px;
+    width:250px;
+    border-radius:20px;
+    transition:0.3s;
+    border:1px solid #00c3ff;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00c3ff;
+}
+
+.project-card{
+    background:#161b22;
+    padding:40px;
+    border-radius:20px;
+    border-left:5px solid #00c3ff;
+}
+
+footer{
+    background:#161b22;
+    text-align:center;
+    padding:25px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
